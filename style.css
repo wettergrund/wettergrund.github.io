@@ -1,10 +1,48 @@
 *{
-    display: inline-block;
-    height: 100%;
+    box-sizing: border-box;
+    /* height: 100%; */
 }
 
 body{
-    background: rgb(204, 84, 84);
+    background-color: #dfe5ed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0; 
+    padding:0;
+}
 
+nav{
+    text-decoration: none;
+    display: flex;
+    padding-left: 10%;
+    padding-top: 3em;
+    background: transparent;
+    padding-bottom: 2em;
+    list-style: none;
     
+
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    display: inline-block;
+    padding: 0 1em;
+}
+.buttons{
+    position: absolute;
+    right: 10%;
+    margin: 0;
+}
+.button{
+    cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5em 1.5em;
+  background-color: #101828;
+  color: #dfe5ed;
+  border: .0125rem solid #101828;
+  border-radius: .5rem;
+}
+.button:hover{
+    color: #fff; 
 }
