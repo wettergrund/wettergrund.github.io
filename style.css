@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Noto+Sans+Mono:wght@400;500;600;800&display=swap');
 
 :root{
-    --bg-clr: #ad6a27;
+    --bg-clr: rgb(173, 106, 39);
     --dark-clr: #110602;
 }
 *{
@@ -12,16 +11,13 @@ html{
     margin: 0;
 }
 body{
-    background: #4b4b4b;
+    background: #9b9b9b;
 
-    font-family: 'Ms Madi', cursive;
-
-    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 
     overflow: hidden;
 
     font-size: 1rem;
-
 }
 
 body:before{
@@ -32,9 +28,11 @@ body:before{
     height: 100vh;
 
     top: 0;
-    opacity: .4;
+    opacity: .3;
     
     pointer-events: none;
+
+
 
 }
 
@@ -55,10 +53,15 @@ body::after{
 
 }
 
+
+
 a{
     text-decoration: none;
+    font-weight: 500;
     color: var(--dark-clr);
-    z-index: 2;
+}
+a:hover{
+    font-weight: 600;
 }
 
 ul{
@@ -68,6 +71,9 @@ li{
     list-style-type: none;
     margin: 0;
 }
+i{
+    font-size: .8rem;
+}
 
 .container{
     display: flex;
@@ -75,16 +81,17 @@ li{
     margin: 3rem auto;
     gap: .6rem;
 
-
     background-color: var(--bg-clr);
 
-    width: 350px;
-    height: 500px;
+    width: 22rem;
+    height: 31rem;
 
     padding: 1rem;
 
     box-shadow: .125rem .125rem .25rem rgba(0, 0, 0, 0.3);
 }
+
+
 
 
 
@@ -98,10 +105,14 @@ li{
 }
 
 .short-line{
+    position: relative;
     background: var(--dark-clr);
     width: 10%;
     height: .5rem;
+    /* z-index: 2; */
 }
+
+
 
 .long-line{
     background: var(--dark-clr);
@@ -133,5 +144,13 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background: #4b4b4b;
+    }
 
 }
