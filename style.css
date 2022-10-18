@@ -29,9 +29,10 @@ body:before{
     height: 100vh;
 
     top: 0;
-    opacity: .3;
+    opacity: .5;
     
     pointer-events: none;
+    z-index: 1;
 
 
 
@@ -41,7 +42,7 @@ body::after{
     content: '';
     position: absolute;
     background: hsla(0, 0%, 50%, 0);
-    backdrop-filter: blur(.0.03rem);
+    backdrop-filter: blur(0.032rem);
     width: 100vw;
     height: 100vh;
 
@@ -106,11 +107,10 @@ i{
 }
 
 .short-line{
-    position: relative;
     background: var(--dark-clr);
     width: 10%;
     height: .5rem;
-    /* z-index: 2; */
+    /* z-index: 1; */
 }
 
 
