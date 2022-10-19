@@ -13,6 +13,7 @@ const myColors = [  "#443929",
 
 
 function getRandomInt(max) {
+ 
     return Math.floor(Math.random() * max);
   }
 
@@ -24,3 +25,4 @@ console.log(myColors[number])
 container.style.backgroundColor = myColors[number]
 toptext.style.color = myColors[number]
 
+document.querySelector("#autofocus").focus();

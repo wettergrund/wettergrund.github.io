@@ -2,7 +2,7 @@
 :root{
     --bg-clr: rgb(173, 106, 39);
     --dark-clr: #110602;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 *{
     margin: 0;
@@ -24,12 +24,12 @@ body{
 body:before{
     content: '';
     position: absolute;
-    background-image: url('img/noise.png');
+    background-image: url('img/overlay2.png');
     width: 100vw;
     height: 100vh;
 
     top: 0;
-    opacity: .5;
+    opacity: .3;
     
     pointer-events: none;
     z-index: 1;
@@ -62,6 +62,7 @@ a{
     text-decoration: none;
     font-weight: 500;
     color: var(--dark-clr);
+    outline: 0;
 }
 a:hover{
     font-weight: 600;
@@ -70,10 +71,22 @@ a:hover{
 ul{
     padding: 0;
 }
+
 li{
+    display: none;
     list-style-type: none;
     margin: 0;
 }
+li:nth-last-of-type(-n+3){
+    display: list-item;
+}
+
+/* a:focus::after{
+    content: '_';
+    animation: blinking 1.5s steps(2) infinite;
+    
+} */
+
 i{
     font-size: .8rem;
 }
@@ -149,10 +162,23 @@ h1{
 
 }
 
+@media (min-width: 523px){
+    :root{
+        font-size: 1.3rem;
+    }
+}
 
 @media (prefers-color-scheme: dark) {
     body{
         background: #4b4b4b;
     }
+}
 
+@keyframes blinking{
+   from {
+    opacity: 0;
+   }
+   to {
+    opacity: 1;
+   }
 }
