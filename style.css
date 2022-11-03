@@ -42,8 +42,8 @@ body::after{
     content: '';
     position: absolute;
     background: hsla(0, 0%, 50%, 0);
-    backdrop-filter: blur(0.032rem);
-    -webkit-backdrop-filter: blur(0.032rem);
+    backdrop-filter: blur(0.025rem);
+    -webkit-backdrop-filter: blur(0.025rem);
     width: 100vw;
     height: 100vh;
 
